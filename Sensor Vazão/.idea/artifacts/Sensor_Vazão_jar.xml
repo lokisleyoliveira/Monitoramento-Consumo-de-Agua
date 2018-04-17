@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Sensor Vazão:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Sensor_Vazão_jar</output-path>
+    <root id="archive" name="Sensor Vazão.jar">
+      <element id="module-output" name="Sensor Vazão" />
+    </root>
+  </artifact>
+</component>

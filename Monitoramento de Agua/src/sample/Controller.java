@@ -151,14 +151,14 @@ public class Controller implements Initializable{
         }
     }
 
-    @FXML
+/*    @FXML
     public void metaConsumo(ActionEvent event) throws IOException, ClassNotFoundException {
-        Double consumo = Double.parseDouble(JOptionPane.showInputDialog("Informe sua meta de consumo:"));
+        Double meta = Double.parseDouble(JOptionPane.showInputDialog("Informe sua meta de consumo:"));
         String email = JOptionPane.showInputDialog("Informe seu e-mail, para ser alertado quando atingir a meta:");
 
-        Meta meta = new Meta(consumo, email, id);
+        Fatura fatura = new Fatura(meta, email, id);
 
-        message = new Message(15, meta);
+        message = new Message(15, fatura);
 
         comun.getThread().sendMessage(message);
 
@@ -174,7 +174,7 @@ public class Controller implements Initializable{
             default:
             JOptionPane.showMessageDialog(null, "Erro ao realizar comunicação com o servidor.");
         }
-    }
+    }*/
 
 
     @Override
