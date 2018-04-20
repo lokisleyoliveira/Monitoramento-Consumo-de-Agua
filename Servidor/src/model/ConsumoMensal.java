@@ -1,10 +1,9 @@
 package model;
 
-import model.Consumo;
-
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class ConsumoMensal {
+public class ConsumoMensal implements Serializable {
 
     private ArrayList<Consumo> list;
     private Double consumoTotal;

@@ -1,12 +1,13 @@
 package model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class ConsumoMensal {
+public class ConsumoMensal implements Serializable {
 
-    ArrayList<Consumo> list;
-    Double consumoTotal;
-    Double valorEstimado;
+    private ArrayList<Consumo> list;
+    private Double consumoTotal;
+    private Double valorEstimado;
 
     public ConsumoMensal() {
     }
@@ -20,6 +21,14 @@ public class ConsumoMensal {
     public void setAll(ArrayList<Consumo> list, Double consumoTotal, Double valorEstimado) {
         this.list = list;
         this.consumoTotal = consumoTotal;
+        this.valorEstimado = valorEstimado;
+    }
+
+    public void setConsumoTotal(Double consumoTotal){
+        this.consumoTotal = consumoTotal;
+    }
+
+    public void setValorEstimado(Double valorEstimado){
         this.valorEstimado = valorEstimado;
     }
 

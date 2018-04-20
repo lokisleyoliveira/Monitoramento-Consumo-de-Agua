@@ -1,8 +1,10 @@
 00 - Insere dados do sensor
 10 - Checa se ID existe
 11 - Solicita consumo atual apartir do ID
-12 - Solicita consumo prévio apartir do ID
+12 - Solicita consumo previo apartir do ID
 15 - Estabelece meta de consumo
+20 - Gerar Fatura 
+21 - Verifica Vazamento e Escassez
 90 - OK
-91 - Solicitação realizada com sucesso + Dados solicitados
+91 - Solicitacao realizada com sucesso + Dados solicitados
 99 - Dado solicitado nao confere

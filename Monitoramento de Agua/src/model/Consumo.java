@@ -1,8 +1,9 @@
 package model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Consumo {
+public class Consumo  implements Serializable {
     private Double metrosCubicos;
     private Date date;
 

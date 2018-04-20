@@ -1,8 +1,9 @@
 package model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Residencia {
+public class Residencia implements Serializable{
 
     private String id;
     private Double vazao;

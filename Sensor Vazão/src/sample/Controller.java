@@ -9,7 +9,9 @@ import javafx.scene.layout.Pane;
 import model.Message;
 import model.Residencia;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.net.*;
 import java.util.Date;
 import java.util.ResourceBundle;
@@ -59,6 +61,7 @@ public class Controller implements Initializable{
         paneData.setDisable(true);
     }
 
+    //Salva os arquivos inseridos na interface gráfica
     public Residencia getData(){
         return new Residencia(
                 textID.getText(),
@@ -68,7 +71,9 @@ public class Controller implements Initializable{
                 new Date());
     }
 
+
     @FXML
+    //Salva os dados do servidor ao qual os dados serão enviados
     public void iniciaConexao(ActionEvent event) throws SocketException, UnknownHostException {
         dSocket = new DatagramSocket();
         ip = InetAddress.getByName(textIP.getText());
@@ -80,13 +85,15 @@ public class Controller implements Initializable{
     }
 
     @FXML
+    //Inicia o TimerTask enviando ao servidor, os dados presentes na interface gráfica
     public void iniciaEnvio(ActionEvent event){
         butEnviar.setVisible(false);
         timer = new Timer();
-        timer.schedule(new Transmissao(), 0, 1000);
+        timer.schedule(new Transmissao(), 0, 5000);
 
     }
 
+    //Classe TikerTask responsável por definir quais ações serão executadas periodicamente
     private class Transmissao extends TimerTask{
         Residencia info;
         Message message;
@@ -95,18 +102,27 @@ public class Controller implements Initializable{
         public void run(){
             info = getData();
             message = new Message(00, info);
-
-            byte[] dados;
             try {
-                dados = message.getBytes();
+                byte[] dados = serializarMensagens(message);
 
                 dPacket = new DatagramPacket(dados, dados.length, ip, port);
 
                 dSocket.send(dPacket);
+
+            System.out.println("Dados enviados: " + info.getId() + " " + info.getVazao() + " " + info.isAgua() + " " + info.getZona());
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println("ERRO");
             }
         }
+    }
+
+    //Converte um objeto num Array de Bytes
+    public byte[] serializarMensagens(Object mensagem) throws IOException {
+        ByteArrayOutputStream b = new ByteArrayOutputStream();
+        ObjectOutputStream out = new ObjectOutputStream(b);
+        out.writeObject(mensagem);
+        out.flush();
+        return b.toByteArray();
     }
 
 }

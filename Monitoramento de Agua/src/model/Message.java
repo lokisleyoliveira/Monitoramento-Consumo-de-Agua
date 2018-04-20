@@ -1,11 +1,8 @@
 package model;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutput;
-import java.io.ObjectOutputStream;
+import java.io.Serializable;
 
-public class Message {
+public class Message implements Serializable{
 
     private int code;
     private Object object;
@@ -29,17 +26,5 @@ public class Message {
 
     public Object getObject() {
         return object;
-    }
-
-    public byte[] getBytes() throws IOException {
-        ByteArrayOutputStream b = new ByteArrayOutputStream();
-        ObjectOutput out = new ObjectOutputStream(b);
-        out.writeObject(this);
-        out.flush();
-        return b.toByteArray();
-    }
-
-    public Message byteToObject(byte[] data){
-        return null;
     }
 }

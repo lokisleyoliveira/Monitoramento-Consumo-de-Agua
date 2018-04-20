@@ -1,5 +1,7 @@
 package sample;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -7,6 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
 import model.*;
 
@@ -14,6 +17,7 @@ import javax.swing.*;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable{
@@ -33,11 +37,11 @@ public class Controller implements Initializable{
     @FXML
     private Pane paneData;
     @FXML
-    private TableView tabCons;
+    private TableView<Consumo> tabCons;
     @FXML
-    private TableColumn colDate;
+    private TableColumn<Consumo, Date> colDate;
     @FXML
-    private TableColumn colCons;
+    private TableColumn<Consumo, Double> colCons;
     @FXML
     private Label labelCons;
     @FXML
@@ -64,6 +68,7 @@ public class Controller implements Initializable{
     }
 
     @FXML
+    //Incializa o socket de conexão com o servidor
     public void iniciaConexao(ActionEvent event) throws IOException {
         ip = textIP.getText();
         port = Integer.parseInt(textPort.getText());
@@ -75,6 +80,7 @@ public class Controller implements Initializable{
     }
 
     @FXML
+    //Define de qual sensor o usuário deseja avaliar o consumo
     public void setID(ActionEvent event) throws IOException, ClassNotFoundException {
         id = textID.getText();
 
@@ -101,21 +107,27 @@ public class Controller implements Initializable{
     }
 
     @FXML
+    // Solicita ao servidor os dados de consumo do mês corrente
     public void consumoAtual(ActionEvent event) throws IOException, ClassNotFoundException {
         message = new Message(11, id);
 
         comun.getThread().sendMessage(message);
 
+        System.out.println("consumo atual, solicitado ao servidor");
+
         message = (Message)comun.getThread().receiveMessage();
+
+        System.out.println("Consumo recebido");
 
         switch (message.getCode()){
             case 91:
                 ConsumoMensal cMensal = (ConsumoMensal)message.getObject();
                 listConsumo = cMensal.getList();
+                System.out.println(listConsumo.size());
                 labelCons.setText("Consumo Total: " + cMensal.getConsumoTotal());
                 labelValor.setText("Valor estimado: R$ " + cMensal.getValorEstimado());
 
-                //TODO Método para adcionar os dados na TableView
+                tabCons.setItems(updateTable());
             case 99:
                 JOptionPane.showMessageDialog(null, "Não há consumo atual registrado");
                 break;
@@ -127,21 +139,26 @@ public class Controller implements Initializable{
     }
 
     @FXML
+    //Solicita ao servidor os dados de consumo do mes anterior
     public void consumoPassado(ActionEvent event) throws IOException, ClassNotFoundException {
         message = new Message(12, id);
 
         comun.getThread().sendMessage(message);
 
+        System.out.println("consumo anterior, solicitado ao servidor");
+
         message = (Message)comun.getThread().receiveMessage();
 
+        System.out.println("Consumo recebido");
         switch (message.getCode()){
             case 91:
                 ConsumoMensal consumoMensal = (ConsumoMensal)message.getObject();
                 listConsumo = consumoMensal.getList();
+                System.out.println(listConsumo.size());
                 labelCons.setText("Consumo Total: " + consumoMensal.getConsumoTotal());
                 labelValor.setText("Valor estimado: R$ " + consumoMensal.getValorEstimado());
 
-                //TODO Método para adcionar os dados na TableView
+                tabCons.setItems(updateTable());
             case 99:
                 JOptionPane.showMessageDialog(null, "Não há consumo anterior a ser exibido.");
                 break;
@@ -182,6 +199,13 @@ public class Controller implements Initializable{
         paneID.setDisable(true);
         paneData.setDisable(true);
         paneCon.setDisable(false);
+
+        colCons.setCellValueFactory(new PropertyValueFactory<>("metrosCubicos"));
+        colDate.setCellValueFactory(new PropertyValueFactory<>("date"));
+    }
+
+    private ObservableList<Consumo> updateTable() {
+        return FXCollections.observableArrayList(listConsumo);
     }
 
 }

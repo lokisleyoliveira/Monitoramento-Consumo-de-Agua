@@ -39,6 +39,9 @@ public class Controller implements Initializable{
     }
 
     @FXML
+    /**
+     * Inicializa o socket de comunicação com o servidor
+     */
     public void iniciaConexao(ActionEvent event) throws IOException {
         ip = textIP.getText();
         port = Integer.parseInt(textPort.getText());
@@ -50,6 +53,9 @@ public class Controller implements Initializable{
     }
 
     @FXML
+    /**
+     * Solicita ao servidor a geração das faturas dos consumidores
+     */
     public void gerarFatura(ActionEvent event) throws IOException, ClassNotFoundException {
         message = new Message(20, null);
 
@@ -66,6 +72,12 @@ public class Controller implements Initializable{
         }
     }
 
+    /**
+     * Solicita ao servidor os dados de cada zona, se há vazamentos ou escassez
+     * @param event
+     * @throws IOException
+     * @throws ClassNotFoundException
+     */
     @FXML
     public void getZonaStatus(ActionEvent event) throws IOException, ClassNotFoundException {
         message = new Message(21, null);
@@ -76,8 +88,10 @@ public class Controller implements Initializable{
 
         switch (message.getCode()){
             case 91:
+                JOptionPane.showMessageDialog(null, message.getObject());
                 break;
             default:
+                JOptionPane.showMessageDialog(null, "Erro durante a comunicação com o servidor");
                 break;
         }
     }

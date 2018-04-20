@@ -11,8 +11,9 @@ public class Zona {
     boolean vazamento;
     boolean escassez;
 
-    public Zona() {
-        lastUpdate = new ConcurrentHashMap<>();
+    public Zona(Residencia r) {
+        lastUpdate = new ArrayList<>();
+        lastUpdate.add(r);
         vazamento = false;
         escassez = false;
     }
@@ -66,7 +67,7 @@ public class Zona {
         }
         if(contem == null){
             escassez = false;
-            vazamento = false; 
+            vazamento = false;
         }
 
     }

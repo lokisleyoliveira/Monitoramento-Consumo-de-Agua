@@ -1,6 +1,5 @@
 package Main;
 
-import model.Message;
 import model.Receptor;
 
 import java.io.IOException;
@@ -12,14 +11,27 @@ public class Server implements Runnable{
     private DatagramSocket socketUDP;
     private ServerSocket socketTCP;
     private Thread principal;
-    private Controller controller = Controller.getInstance();
 
+    /**
+     * Inicializa o servidor, e realiza a leitura do arquivo de persistencia
+     * @param args
+     */
     public static void main (String[] args) {
+        try {
+            Controller.getInstance().leArquivo();
+        } catch (IOException | ClassNotFoundException e) {
+            System.out.println("Erro na leitura do arquivo de persistencia");
+        }
         System.out.print("Informe a porta a ser usada pelo servidor: ");
         Scanner scanner = new Scanner(System.in);
         Server s = new Server(scanner.nextInt());
+        System.out.println("O Servidor foi inicializado");
     }
 
+    /**
+     * Construtor do servidor, que o inicializa abrindo a conexao TCP e UDP
+     * @param port
+     */
     public Server (int port){
         try {
             socketUDP = new DatagramSocket(port);
@@ -33,12 +45,18 @@ public class Server implements Runnable{
         principal.start();
     }
 
+    /**
+     * Mantem a conexao aberta para os dois protocolos de aplicação
+     */
     @Override
     public void run() {
         conexaoUDP();
         conexaoTCP();
     }
 
+    /**
+     * Inicializa a conexao UDP
+     */
     public void conexaoUDP() {
         new Thread(){
             @Override
@@ -57,6 +75,9 @@ public class Server implements Runnable{
         }.start();
     }
 
+    /**
+     * Inicializa a conexao TCP
+     */
     public void conexaoTCP() {
         new Thread(){
             @Override

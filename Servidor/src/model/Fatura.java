@@ -1,6 +1,8 @@
 package model;
 
-public class Fatura {
+import java.io.Serializable;
+
+public class Fatura implements Serializable {
 
     private String id;
     private Double consumoTotal;
