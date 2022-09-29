@@ -2,98 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f716ece9-4138-4eb3-820b-7108eb9a4173" name="Default" comment="Quase lá">
-      <change beforePath="$PROJECT_DIR$/../Codigos do Protocolo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Codigos do Protocolo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Embasa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Embasa/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Embasa/src/Model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Embasa/src/Model/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Embasa/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Embasa/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitoramento de Agua/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitoramento de Agua/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitoramento de Agua/out/production/Monitoramento de Agua/model/ConsumoMensal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitoramento de Agua/out/production/Monitoramento de Agua/model/ConsumoMensal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitoramento de Agua/out/production/Monitoramento de Agua/model/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitoramento de Agua/out/production/Monitoramento de Agua/model/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitoramento de Agua/out/production/Monitoramento de Agua/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitoramento de Agua/out/production/Monitoramento de Agua/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitoramento de Agua/src/model/Consumo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitoramento de Agua/src/model/Consumo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitoramento de Agua/src/model/ConsumoMensal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitoramento de Agua/src/model/ConsumoMensal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitoramento de Agua/src/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitoramento de Agua/src/model/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Monitoramento de Agua/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Monitoramento de Agua/src/sample/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sensor Vazão/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sensor Vazão/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sensor Vazão/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sensor Vazão/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sensor Vazão/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sensor Vazão/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sensor Vazão/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sensor Vazão/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Sensor Vazão/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sensor Vazão/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sensor Vazão/out/production/Sensor Vazão/model/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sensor Vazão/out/production/Sensor Vazão/model/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sensor Vazão/out/production/Sensor Vazão/model/Residencia.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sensor Vazão/out/production/Sensor Vazão/model/Residencia.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sensor Vazão/out/production/Sensor Vazão/sample/Controller$Transmissao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sensor Vazão/out/production/Sensor Vazão/sample/Controller$Transmissao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sensor Vazão/out/production/Sensor Vazão/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sensor Vazão/out/production/Sensor Vazão/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sensor Vazão/src/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sensor Vazão/src/model/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sensor Vazão/src/model/Residencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sensor Vazão/src/model/Residencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sensor Vazão/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sensor Vazão/src/sample/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sensor Vazão/Sensor Vazão.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sensor Vazão/Sensor Vazão.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sensor Vazão/out/production/Sensor Vazão/model/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sensor Vazão/out/production/Sensor Vazão/model/Residencia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sensor Vazão/out/production/Sensor Vazão/sample/Controller$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sensor Vazão/out/production/Sensor Vazão/sample/Controller$Transmissao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sensor Vazão/out/production/Sensor Vazão/sample/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sensor Vazão/out/production/Sensor Vazão/sample/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Consumo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Consumo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ConsumoMensal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ConsumoMensal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Fatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Fatura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Receptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Receptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Residencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Residencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Zona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Zona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Servidor/Main/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/Main/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Servidor/Main/Server$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/Main/Server$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Servidor/Main/Server$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/Main/Server$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Servidor/Main/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/Main/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Servidor/model/Consumo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/model/Consumo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Servidor/model/ConsumoMensal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/model/ConsumoMensal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Servidor/model/Fatura.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/model/Fatura.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Servidor/model/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/model/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Servidor/model/Receptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/model/Receptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Servidor/model/Residencia.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/model/Residencia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Servidor/model/Zona.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/model/Zona.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/Server.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1635#2228#0" expanded="true" />
-                <element signature="e#2227#2228#0" expanded="true" />
-                <element signature="e#2332#2769#0" expanded="true" />
-                <element signature="e#2768#2769#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Receptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Receptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="978">
-              <caret line="76" column="71" selection-start-line="76" selection-start-column="71" selection-end-line="76" selection-end-column="71" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="210" column="64" selection-start-line="210" selection-start-column="64" selection-end-line="210" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#valorFatura#0;class#Controller#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fatura.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Fatura.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -138,12 +76,16 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-6" />
     <option name="y" value="1" />
     <option name="width" value="1378" />
     <option name="height" value="773" />
   </component>
+  <component name="ProjectId" id="2FRwcDPKY5oskm9aNYEoYhx0IjL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -183,13 +125,14 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sensor Vazão" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;D:/Projetos/Monitoramento-Consumo-de-Agua/Servidor&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Main" />
@@ -199,18 +142,6 @@
       <recent name="C:\Users\lokis\Dropbox\UEFS\2018.1\MI - Concorrencia e Conectividade\PROBLEMA 1\Monitoramento-Consumo-de-Agua\Servidor\src\Main" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -219,62 +150,43 @@
       <option name="MAIN_CLASS_NAME" value="Main.Server" />
       <module name="Servidor" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+    <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -320,8 +232,16 @@
       <window_info anchor="bottom" id="Message" order="1" />
     </layout>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Quase lá" />
